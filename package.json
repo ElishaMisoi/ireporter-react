@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/Elisha-Misoi/ireporter-react#readme",
   "dependencies": {
+    "express": "^4.16.4",
     "history": "^4.9.0",
     "localStorage": "^1.0.4",
     "react": "^16.8.6",
