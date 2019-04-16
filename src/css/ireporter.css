@@ -1,0 +1,133 @@
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+  }
+
+#app{
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+}
+
+#indexBody {
+    background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(images/header-background.jpg);
+    background-size: cover;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  #indexHeader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+  
+  #indexH1 {
+    margin: 0;
+    font-size: 10rem;
+    white-space: nowrap;
+    color: white;
+  }
+
+  .body{
+    margin: 10px;
+    padding: 10px;
+  }
+
+  #title{
+    margin: 10px;
+  }
+
+  .boxshadow {
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding: 70px 90px 90px 90px;
+    background: white;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -200px;
+    border-radius: 5px;
+  }
+
+  #navBar{
+      margin: 0 10px 0 10px;
+      background: white;
+  }
+
+  .formLable{
+    font-size: 30px;
+    margin-bottom: 200px;
+  }
+
+  .form{
+    padding: 30px 0px 0px 0px;
+  }
+
+.messageBox{
+    width: 400px;
+}
+
+.formDivClass{
+    position: relative;
+    background: white;
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    margin: -200px 0 0 -200px;
+    border-radius: 5px;
+}
+
+.IsVisibleTrue{
+    display: block;
+}
+
+.IsVisibleFalse{
+    display: none;
+}
+
+/* .listView{
+  width: 400px;
+  overflow: hidden;
+} */
+
+/* .listView .Card :hover{
+  -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  padding: 10px;
+  background: white;
+} */
+
+.cardItem .image{
+  height: 400px !important;
+  object-fit: cover !important;
+}
+
+.cardItem{
+  width: 420px !important;
+  margin: 20px !important;
+}
