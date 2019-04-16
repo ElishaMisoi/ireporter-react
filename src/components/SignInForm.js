@@ -1,26 +1,11 @@
 import React, { Component } from 'react'
 import { Button, Form, Message } from 'semantic-ui-react';
 import '../css/ireporter.css';
+import { toast } from 'react-toastify';
 
 
 const signInUrl = `${process.env.BASE_URL}/auth/login/`;
 const localStorage = require('localStorage');
-
-
-// displayMessage = () => {
-//   render
-//     {
-//       return (
-//         <div class="messageBox">
-//         {isVisible ? this.renderElement : null? };
-//         <Message warning>
-//             <Message.Header>You must register before you can do that!</Message.Header>
-//             <p name="message">Visit our registration page, then try again.</p>
-//         </Message>
-//       </div>
-//       );
-//     };
-//   };
 
 class SignInForm extends Component {
 
@@ -47,11 +32,24 @@ class SignInForm extends Component {
     .then(data => {
       if(data.status_code == 200){
         localStorage.setItem('user_token', data.body.token);
+        toast.success("Logged In", {
+          position: toast.POSITION.TOP_CENTER,
+          autoClose:3000,
+          hideProgressBar:true,
+          pauseOnHover:true,
+          className: 'toastSuccess'
+        })
         setTimeout(()=>{this.props.history.push('/interventions')}, 3000);
-        console.log('SUCCESS');
       }
       else{
           console.log(data.body.message);
+          toast.success(data.body.message, {
+            position: toast.POSITION.TOP_CENTER,
+            autoClose:3000,
+            hideProgressBar:true,
+            pauseOnHover:true,
+            className: 'toastError'
+          })
       }
     })
     .catch(error => {

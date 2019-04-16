@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Input, Menu, Sticky, } from 'semantic-ui-react'
+import { Input, Menu } from 'semantic-ui-react'
 
 export default class NavBar extends Component {
   state = { activeItem: 'home' }
@@ -25,8 +25,8 @@ export default class NavBar extends Component {
             onClick={this.handleItemClick}
           />
           <Menu.Item
-            name='signin'
-            active={activeItem === 'signin'}
+            name='create'
+            active={activeItem === 'create'}
             onClick={this.handleItemClick}
           />
           <Menu.Menu position='right'>

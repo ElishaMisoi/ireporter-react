@@ -6,6 +6,7 @@ import Interventions from '../components/Interventions';
 import Redflags from '../components/Redflags';
 import Landing from '../components/Landing';
 import DisplayItem from '../components/Redflags';
+import CreateIncident from '../components/CreateIncident';
 
 
 const Routes = () => (
@@ -16,7 +17,7 @@ const Routes = () => (
     <Route exact path="/signup" component={SignUpForm} />
     <Route exact path="/interventions" component={Interventions} />
     <Route exact path="/redflags" component={Redflags} />
-    {/* <Route exact path="/home" component={landingPage} /> */}
+    <Route exact path="/create" component={CreateIncident} />
   </Switch>
 );
 

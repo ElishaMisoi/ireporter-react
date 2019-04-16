@@ -101,6 +101,26 @@
     border-radius: 5px;
 }
 
+.createBoxshadow {
+  -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  padding: 70px 90px 90px 90px;
+  background: white;
+  position: absolute;
+  width: 800px;
+  height: 500px;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -190px 0 0 -400px;
+  border-radius: 5px;
+}
+
+.editor{
+  height: 1000px !important;
+}
+
 .IsVisibleTrue{
     display: block;
 }
@@ -130,4 +150,14 @@
 .cardItem{
   width: 420px !important;
   margin: 20px !important;
+}
+
+.toastSuccess{
+  background: #42ff71 !important;
+  border-radius: 5px !important;
+}
+
+.toastError{
+  background: #ff4242 !important;
+  border-radius: 5px !important;
 }
